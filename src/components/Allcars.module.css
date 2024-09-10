@@ -1,0 +1,103 @@
+.main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(252, 240, 225);
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+#first, #second, #third, #forth, #fift{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 0px;
+}
+#first img, #second img, #third img, #forth img, #fift img{
+  width: 50%;
+}
+.info{
+  width: 40%;
+  text-align: center;
+}
+#first h1{
+  color: rgb(11, 99, 11);
+  font-family: fantasy;
+  font-size: 3rem;
+}
+#second h1{
+  color: rgb(124, 129, 133);
+  font-family: fantasy;
+  font-size: 3rem;
+}
+#third h1{
+  color: rgb(209, 62, 62);
+  font-family: fantasy;
+  font-size: 3rem;
+}
+#forth h1{
+  color:#80a675;
+  font-family: fantasy;
+  font-size: 3rem;
+}
+#fift h1{
+  color:#81c7cd;
+  font-family: fantasy;
+  font-size: 3rem;
+  font-weight: 300;
+}
+#fift img{
+  margin-top: -200px;
+}
+#first h2, #second h2, #third h2, #forth h2, #fift h2{
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#first p, #second p, #third p, #forth p, #fift p{
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+}
+.animation{
+ animation: appear 5s linear;
+ animation-timeline: view();
+ animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  } to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  #first, #third, #fift{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #second, #forth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  #first img, #second img, #third img, #forth img, #fift img{
+    width: 80%;
+  }
+  .info{
+    width: 80%;
+    text-align: center;
+  }
+  #first h1, #second h1, #third h1, #forth h1, #fift h1{
+    font-size: 8vw;
+  }
+}

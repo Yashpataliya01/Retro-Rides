@@ -1,0 +1,31 @@
+#textanimation{
+  background-color: #eeafaf;
+  display: flex;
+  overflow: hidden;
+  height: 100px;
+}
+.marque{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  flex-shrink: 0;
+  padding: 0 5vw;
+  transform: translateX(-100%);
+}
+
+.marque h1{
+ font-size: 4vw;
+ font-family: "Handjet", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ margin-right: 1em;
+ color: rgb(0, 0, 0);
+}
+
+.imgs{
+  height: 2.5vw;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: white;
+}
